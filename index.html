@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BARUM HOME</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,"Noto Sans KR",sans-serif;
+  background:#f7f8f6;
+  color:#202124;
+}
+header{
+  background:white;
+  border-bottom:1px solid #ddd;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-size:24px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+.logo span{color:#2e7d5b}
+nav{font-size:14px;color:#666}
+
+.hero{
+  text-align:center;
+  padding:65px 20px 45px;
+}
+.hero h1{
+  font-size:38px;
+  margin:0 0 12px;
+}
+.hero p{
+  color:#666;
+  line-height:1.7;
+}
+
+.search{
+  max-width:620px;
+  margin:28px auto 0;
+  background:white;
+  border:1px solid #ddd;
+  border-radius:30px;
+  padding:15px 22px;
+  text-align:left;
+  color:#999;
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+.house{
+  max-width:1000px;
+  margin:auto;
+  padding:10px 20px 60px;
+}
+.house-title{
+  text-align:center;
+  margin-bottom:25px;
+}
+.rooms{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+.room{
+  background:white;
+  border:1px solid #e3e3e3;
+  border-radius:18px;
+  padding:25px 20px;
+  min-height:150px;
+  text-decoration:none;
+  color:#202124;
+  transition:.2s;
+}
+.room:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+.icon{font-size:30px}
+.room h3{margin:13px 0 8px}
+.room p{
+  margin:0;
+  color:#777;
+  font-size:14px;
+  line-height:1.5;
+}
+
+.philosophy{
+  max-width:960px;
+  margin:0 auto 60px;
+  padding:35px;
+  background:#eef5f1;
+  border-radius:20px;
+  text-align:center;
+}
+.philosophy strong{
+  color:#276749;
+  font-size:21px;
+}
+
+footer{
+  background:#202421;
+  color:#bbb;
+  text-align:center;
+  padding:30px 15px;
+  font-size:13px;
+}
+
+@media(max-width:700px){
+  .rooms{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:30px}
+}
+@media(max-width:450px){
+  .rooms{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">BARUM <span>HOME</span></div>
+  <nav>바름그룹 통합 홈</nav>
+</header>
+
+<section class="hero">
+  <h1>바른 삶을 연결합니다.</h1>
+  <p>
+    건강 · 돌봄 · 콘텐츠 · 음악 · AI<br>
+    BARUM의 모든 프로젝트가 모이는 집
+  </p>
+
+  <div class="search">
+    🔎 BARUM에서 무엇을 찾고 계신가요?
+  </div>
+</section>
+
+<main class="house">
+
+  <div class="house-title">
+    <h2>🏠 BARUM HOUSE</h2>
+    <p>원하는 공간으로 들어가세요.</p>
+  </div>
+
+  <div class="rooms">
+
+    <a class="room" href="https://blog.naver.com/care10000">
+      <div class="icon">❤️</div>
+      <h3>건강 이야기</h3>
+      <p>건강·간호·노인돌봄 정보를 만나는 공간</p>
+    </a>
+
+    <a class="room" href="https://visitnursekorea.blogspot.com">
+      <div class="icon">🌏</div>
+      <h3>K-Care Global</h3>
+      <p>한국의 돌봄과 방문간호를 세계와 연결합니다.</p>
+    </a>
+
+    <a class="room" href="#">
+      <div class="icon">🎬</div>
+      <h3>BARUM 콘텐츠</h3>
+      <p>영상·쇼츠·교육 콘텐츠 제작실</p>
+    </a>
+
+    <a class="room" href="#">
+      <div class="icon">🎵</div>
+      <h3>B-MAP Music Care</h3>
+      <p>돌봄 현장을 위한 바름 뮤직케어 연구실</p>
+    </a>
+
+    <a class="room" href="#">
+      <div class="icon">🤖</div>
+      <h3>BARUM AI</h3>
+      <p>AI와 사람이 함께 성장하는 미래 공간</p>
+    </a>
+
+    <a class="room" href="#">
+      <div class="icon">📚</div>
+      <h3>자료실</h3>
+      <p>프로젝트·가이드·연구자료를 정리하는 공간</p>
+    </a>
+
+  </div>
+</main>
+
+<section class="philosophy">
+  <strong>뜻있고 보람된 바른 인생</strong>
+  <p>
+    돈은 목적이 아니라 더 많은 사람에게 바른 도움을 전하기 위한 도구입니다.<br>
+    BARUM은 사람과 기술을 연결해 더 나은 삶을 만들어갑니다.
+  </p>
+</section>
+
+<footer>
+  BARUM GROUP · 건강이야기 바름<br><br>
+  Human × Care × AI
+</footer>
+
+</body>
+</html>
